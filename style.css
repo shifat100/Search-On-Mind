@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'customfont';
+    src: url('font.ttf');
+}
+
+* {
+    outline: none;
+    font-family: 'customfont';
+    box-sizing: border-box;
+    text-transform: capitalize;
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+.header {
+    display: block;
+    width: 100%;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    top: 15px;
+    bottom: 15px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    background: white;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+.footerelement {
+    display: inline-block;
+    width: 33%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+}
+
+
+.item {
+    display: block;
+    color: #000000;
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 3px 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.item:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.item:nth-child(even) {
+    background-color: #fff;
+}
+
+.item:hover, .item:focus {
+    background: #888;
+    color: #fff;
+}
+
+
+.blur {
+    display: none;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 33;
+}
+
+#nofilenotice {
+    display: block;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.flex {
+    background: white;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.qbar {
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #43d;
+    color: white;
+    width: 100%;
+    max-height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 0px;
+    font-size: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: keep-all;
+}

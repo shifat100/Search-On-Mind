@@ -1,0 +1,26 @@
+{
+  "version": "1.0.1",
+  "name": "Search On Mind",
+  "description": "Search On Mind Is Free Game For Kaios, Select One And Keep It On Your Mind Give Few Answer And Alien Will Give Answer What You Chosen At First.",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/icons/ic_56.png",
+    "112": "/icons/ic_112.png",
+    "128": "/icons/ic_128.png"
+  },
+  "fullscreen": false,
+  "developer": {
+    "name": "shifat100",
+    "url": "http://shifat100.xtgem.com"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Search On Mind",
+      "subtitle": "I Can Read Your Mind",
+      "description": "Search On Mind Is Free Game For Kaios, Select One And Keep It On Your Mind Give Few Answer And Alien Will Give Answer What You Chosen At First."
+    }
+  },
+  "default_locale": "en-US",
+  "cursor": false,
+  "type": "web"
+}
